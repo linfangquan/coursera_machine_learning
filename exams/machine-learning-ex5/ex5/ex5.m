@@ -19,7 +19,7 @@
 clear ; close all; clc
 
 %% =========== Part 1: Loading and Visualizing Data =============
-%  We start the exercise by first loading and visualizing the dataset. 
+%  We start the exercise by first loading and visualizing the dataset.
 %  The following code will load the dataset into your environment and plot
 %  the data.
 %
@@ -105,6 +105,9 @@ pause;
 %
 
 lambda = 0;
+
+
+
 [error_train, error_val] = ...
     learningCurve([ones(m, 1) X], y, ...
                   [ones(size(Xval, 1), 1) Xval], yval, ...
